@@ -28,18 +28,13 @@ Class TableHtml5{
     }
     public function tBody()
     {
-          $this->tbody = "<tbody>";
-               for($i=0;  $i < count($this->tRows); $i++)
-	       {
-		   $this->tbody .= "<tr>";
-			for($j=0; $j < count($this->tRows[$i]); $j++)
-		        {
-                            $this->tbody .= "<td>".$this->tRows[$i][$j] ."</td>";                     
-		        }
-		   $this->tbody .="</tr>";
-	       }					
-	  $this->tbody .= "</tbody>";
-     }
+        $this->tbody = "<tbody>";
+            for($i=0;  $i < count($this->tRows); $i++)
+	    {
+	      $this->tbody .= "<tr><td>".implode("</td><td>", $this->tRows[$i])."</td></tr>";
+            }					
+	$this->tbody .= "</tbody>";
+    }
 	
      public function endTable()
      {
