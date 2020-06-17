@@ -29,26 +29,26 @@ Class TableHtml5{
     public function tBody()
     {
           $this->tbody = "<tbody>";
-       for($i=0;  $i < count($this->tRows); $i++)
-	     {
-			    $this->tbody .= "<tr>";
-				    for($j=0; $j < count($this->tRows[$i]); $j++)
-			        {
-                $this->tbody .= "<td>".$this->tRows[$i][$j] ."</td>";                     
-			        }
-			     $this->tbody .="</tr>";
-			  }					
-		       $this->tbody .= "</tbody>";
+               for($i=0;  $i < count($this->tRows); $i++)
+	       {
+		   $this->tbody .= "<tr>";
+			for($j=0; $j < count($this->tRows[$i]); $j++)
+		        {
+                            $this->tbody .= "<td>".$this->tRows[$i][$j] ."</td>";                     
+		        }
+		   $this->tbody .="</tr>";
+	       }					
+	  $this->tbody .= "</tbody>";
      }
 	
-      public function endTable()
-      {
-	 $this->endTable = "</ br>\n</table>";
-      }
+     public function endTable()
+     {
+	$this->endTable = "</ br>\n</table>";
+     }
 	
-      public function getRenderView()
-      {
-        return $this->startTable.$this->thead.$this->tbody.$this->endTable;
-      }
+     public function getRenderView()
+     {
+       return $this->startTable.$this->thead.$this->tbody.$this->endTable;
+     }
 }
 	
