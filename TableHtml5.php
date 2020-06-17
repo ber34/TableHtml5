@@ -4,8 +4,8 @@ Class TableHtml5{
     private $tRows=[];
     private $tbody;
     private $thead;
-	  private $startTable;
-	  private $endTable;
+    private $startTable;
+    private $endTable;
 
     public function __construct()
     {
