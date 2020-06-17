@@ -16,5 +16,5 @@ $tableHtml5 = new TableHtml5();
                       $tableHtml5->setTheader($tHeaderRows);
                       $tableHtml5->setRows($tBodyRows);
                       $tableHtml5->tBody();
-					            $tableHtml5->endTable(); 
+		      $tableHtml5->endTable(); 
                  echo $tableHtml5->getRenderView();
