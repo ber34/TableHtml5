@@ -1,3 +1,4 @@
+<?php
 Class TableHtml5{
 
     private $tRows=[];
@@ -38,16 +39,16 @@ Class TableHtml5{
 			     $this->tbody .="</tr>";
 			  }					
 		       $this->tbody .= "</tbody>";
-    }
+     }
 	
-	  public function endTable()
-	  {
-		   $this->endTable = "</ br>\n</table>";
-	  }
+      public function endTable()
+      {
+	 $this->endTable = "</ br>\n</table>";
+      }
 	
-    public function getRenderView()
-    {
-       return $this->startTable.$this->thead.$this->tbody.$this->endTable;
-    }
+      public function getRenderView()
+      {
+        return $this->startTable.$this->thead.$this->tbody.$this->endTable;
+      }
 }
 	
