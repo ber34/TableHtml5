@@ -1,5 +1,5 @@
 <?php
-require('tableHtml5.php');
+require('TableHtml5.php');
 
 $tableHtml5 = new TableHtml5();
 
