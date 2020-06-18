@@ -14,7 +14,7 @@ Class TableHtml5{
     
     public function startTable()
 	  {
-	    	$this->startTable = "<table class=\"table\">\n</ br>";
+	    	$this->startTable = "<table class=\"table\">";
 	  }
 
     public function setTheader($title=[])
@@ -38,7 +38,7 @@ Class TableHtml5{
 	
      public function endTable()
      {
-	$this->endTable = "</ br>\n</table>";
+	$this->endTable = "</table>";
      }
 	
      public function getRenderView()
