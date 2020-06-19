@@ -29,9 +29,9 @@ Class TableHtml5{
     public function tBody()
     {
         $this->tbody = "<tbody>";
-            for($i=0;  $i < count($this->tRows); $i++)
+             foreach($this->tRows as $value)
 	    {
-	      $this->tbody .= "<tr><td>".implode("</td><td>", $this->tRows[$i])."</td></tr>";
+	      $this->tbody .= "<tr><td>".implode("</td><td>", $value)."</td></tr>";
             }					
 	$this->tbody .= "</tbody>";
     }
